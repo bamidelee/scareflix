@@ -1,0 +1,87 @@
+@font-face {
+    font-family: strange;
+    src: url('../Strange.ttf');
+  }
+
+
+
+.navBar{
+    display: grid;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), black);
+    grid-template-columns: auto auto;
+    align-items: center;
+    color: red;
+    font-family: strange;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.navBar img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.navRight{
+    justify-self: right;
+    margin-right: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
+.navBar a:hover{
+    color: rgb(109, 5, 5);
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.navBar input{
+    background-color: rgb(37, 36, 36);
+    color: red;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 20px;
+    animation-name: enter;
+    animation-duration: .5s;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    padding: .2rem;
+}
+
+
+.navBar span{
+    cursor:pointer 
+
+}
+
+.search{
+    width: 12rem;
+    position: relative;
+}
+
+@keyframes enter {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}

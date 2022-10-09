@@ -1,0 +1,85 @@
+@font-face {
+    font-family: strange;
+    src: url('../Strange.ttf');
+  }
+
+
+
+.carousel{
+    color: white;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.carouselContainer{
+    position: relative;
+   transition: all .5s;
+}
+.carouselContainer:hover .movieControls{
+    display: block;
+}
+.carouselContainer:hover{
+    transform: scale(1.2,1.2);
+    z-index: 2;
+}
+
+.carouselTitle{
+    font-family: strange;
+    color: red;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.carousel .material-symbols-outlined:hover{
+
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+ 
+}
+
+  
+  .carousel .material-symbols-outlined{
+    font-size: 2.5rem;
+  }
+
+
+.play{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.movieControls{
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    animation-name: controlRise;
+    animation-duration: 1s;
+    display: none;
+}
+
+.movieControls h2{
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+@keyframes controlRise{
+    from{
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: strange;
+    src: url('../Strange.ttf');
+  }
+
+.intro{
+    background-image: url('../Blood.gif');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight:600;
+    font-family: strange;
+    color: rgb(119, 10, 10);
+    text-shadow: 20px 20px 1px #ff0000;
+    
+
+}
+
+.intro h1{
+    animation-name: tada;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tada {
+    from {
+        color: white;
+        transform: scale(2);
+        text-shadow: 20px 20px 1px #444343;
+    }
+
+    to{
+        color: rgb(119, 10, 10);
+        transform: scale(1);
+        text-shadow: 2px 2px 1px #ff0000;
+    }
+}
+
