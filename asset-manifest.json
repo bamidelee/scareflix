@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/scareflix/static/css/main.9c72fd45.css",
+    "main.js": "/scareflix/static/js/main.76807e15.js",
+    "static/media/Scareeye.gif": "/scareflix/static/media/Scareeye.062c5ad562e16f3c2028.gif",
+    "static/media/sound.mp3": "/scareflix/static/media/sound.8ad6414cf943281329e7.mp3",
+    "static/media/Strange.ttf": "/scareflix/static/media/Strange.52776f6848caba7addd8.ttf",
+    "static/media/Blood.gif": "/scareflix/static/media/Blood.ea23f000d092686f697e.gif",
+    "static/media/slick.svg": "/scareflix/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/scareflix/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/scareflix/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/scareflix/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/scareflix/index.html",
+    "main.9c72fd45.css.map": "/scareflix/static/css/main.9c72fd45.css.map",
+    "main.76807e15.js.map": "/scareflix/static/js/main.76807e15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c72fd45.css",
+    "static/js/main.76807e15.js"
+  ]
+}
