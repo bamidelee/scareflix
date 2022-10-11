@@ -15,22 +15,31 @@
     letter-spacing: 2px;
     font-size: 1.5rem;
     height: 5rem;
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 4;
+}
+
+.navBar h2{
+    font-size: 3vw;
 }
 
 .navBar img{
     height: 3rem;
     width: 3rem;
     margin-left: 1rem;
+    margin-bottom: 3px;
 }
 
 .navRight{
+    justify-content: right;
     justify-self: right;
     margin-right: 2rem;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    width: 60vw;
 }
 
 .navBar a{
@@ -52,7 +61,7 @@
 }
 
 .navBar input{
-    background-color: rgb(37, 36, 36);
+    background-color: rgba(37, 36, 36, 0.568);
     color: red;
     outline: none;
     border: 2px solid red;
@@ -61,7 +70,7 @@
     animation-duration: .5s;
     position: absolute;
     right: 0;
-    width: 100%;
+    width: 30vw;
     padding: .2rem;
 }
 
@@ -74,6 +83,8 @@
 .search{
     width: 12rem;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 @keyframes enter {
@@ -82,6 +93,14 @@
     }
 
     to{
-        width: 100%;
+        width: 30vw;
     }
 }
+
+.search span{
+    position: absolute;
+    color: red;
+    right: 3px;
+    cursor: pointer;
+}
+

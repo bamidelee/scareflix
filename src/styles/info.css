@@ -1,0 +1,76 @@
+@font-face {
+    font-family: strange;
+    src: url('../Strange.ttf');
+  }
+
+
+.info{
+    position: fixed;
+    width: 99vmin;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 80vh;
+    top: 6rem;
+    background-color: rgb(27, 24, 24);
+    color: white;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    border-radius: 10px;
+}
+
+.info::-webkit-scrollbar {
+    display: none;
+  }
+
+  .infoImage{
+    position: relative;
+    width: 100%;
+  }
+
+  .infoImage img{
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  .infoImage span{
+    position: absolute;
+    color: rgba(43, 38, 38, 0.986);
+    top: 2rem;
+    right: 2rem;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+    font-size: 2rem;
+
+  }
+
+  .movieDetails{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .movieDetails .movieTitle{
+    font-family: strange;
+    color: red;
+    letter-spacing: 2px;
+  }
+
+  .splitter{
+    height: 1px;
+    background-color: grey;
+    width: 100%;
+  }
+
+  .movieDetails span{
+    color: grey;
+  }
+
+  .infoClose{
+    cursor: pointer;
+  }

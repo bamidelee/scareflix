@@ -1,0 +1,26 @@
+
+.searchResult{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   margin-top: 8rem;
+   color: white;
+}
+
+.searchContainer{
+    position: relative;
+    transition: all .5s;
+}
+
+.searchContainer img{
+    height: 9rem;
+    width: 11rem;
+}
+
+.searchContainer:hover .movieControls{
+    display: block;
+}
+.searchContainer:hover{
+    transform: scale(1.2,1.2);
+    z-index: 2;
+}

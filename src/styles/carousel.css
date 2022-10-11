@@ -12,7 +12,10 @@
     margin-right: auto;
 }
 
-
+.carouselContainer img{
+  height: 12rem;
+  width: 18rem
+}
 
 .carouselContainer{
     position: relative;
@@ -24,6 +27,11 @@
 .carouselContainer:hover{
     transform: scale(1.2,1.2);
     z-index: 2;
+}
+
+.carousel:hover .carouselContainer:not(.carouselContainer:hover){
+  -webkit-filter:brightness(50%);
+  filter: brightness(50%)
 }
 
 .carouselTitle{
@@ -64,11 +72,15 @@
     animation-name: controlRise;
     animation-duration: 1s;
     display: none;
+    width: 10rem;
+    overflow: hidden;
+    z-index: 3;
+    cursor: pointer;
 }
 
 .movieControls h2{
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1rem;
 }
 
@@ -82,4 +94,29 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.carouselContainer .rating{
+  position: absolute;
+  font-weight: 600;
+  font-family: 'Monoton', cursive;
+  padding: 0;
+  left: -1.5rem;
+  font-size: 10rem;
+  color: red;
+  top: 1px;
+  z-index: 1;
+}
+
+.slick-arrow{
+  height: 100%;
+  width: 3rem;
+  z-index: 5;
+  opacity: 0;
+  transition: all .5s;
+
+}
+
+.slick-arrow:hover{
+  opacity: 1;
 }

@@ -2,7 +2,7 @@
   import '../styles/navbar.css'
   import {useState, useRef, useEffect} from 'react'
 
-  function NavBar({scroll}){
+  function NavBar({scroll, Search, setSearch}){
     const [width, setWidth] = useState(false)
     const search = useRef()
 
@@ -17,18 +17,16 @@
     }, [width])
   
     return(
-        <div className='navBar' style={scroll < 10? {backgroundImage: 'linear-gradient(to right,rgba(0, 0, 0, 0), black)'}: {backgroundImage: 'linear-gradient(to right,black, black)'}}>
+        <div className='navBar' style={scroll < 10? {backgroundImage: 'linear-gradient(to right,rgba(0, 0, 0, 0.5), black)'}: {backgroundImage: 'linear-gradient(to right,black, black)'}}>
             <div className='navLeft'>
                 <h2>SCAREFLIX</h2>
-                <a href="">Home</a>
-                <a href="">Tv series</a>
-                <a href="">Movies</a>
-                <a href="">New$Popular</a>
-                <a href="">My list</a>
             </div>
             <div className='navRight' >
                 <div className='search' id='search' >
-                    <input type="text" ref={search} />
+                    <input type="text" ref={search} onChange={({target}) => setSearch(target.value)} value={Search} placeholder='Search movies'/>
+                   {width && <span class="material-symbols-outlined" onClick={() => setSearch('')}>
+                        close
+                    </span>}
                 </div>
                 <span className="material-symbols-outlined" onClick={()=> setWidth(!width)} >
                  search

@@ -9,7 +9,7 @@ body{
 
 header{
  height: 90vh;
- background-size: 100% 100%;
+ background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
  overflow: hidden;
@@ -54,3 +54,48 @@ header .playButton{
 header .infoButton{
     background-color: rgb(116, 110, 110);
 }
+
+iframe{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    margin: none;
+    border: none;
+    padding: none;
+}
+
+.iframeContainer{
+    position: relative;
+    height: 100vh;
+}
+
+.iframeContainer span{
+    position: fixed;
+    top: 3rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 4rem;
+    color: red;
+}
+
+@media only screen and (max-width: 650px) {
+   .headerDetails{
+    text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30vh;
+   }
+
+   .buttonsContainer{
+    justify-content: center;
+   }
+  }

@@ -16,7 +16,7 @@
     font-weight:600;
     font-family: strange;
     color: rgb(119, 10, 10);
-    text-shadow: 20px 20px 1px #ff0000;
+    text-shadow: 2px 4px 1px #ff0000;
     
 
 }
@@ -24,7 +24,6 @@
 .intro h1{
     animation-name: tada;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes tada {
@@ -39,5 +38,10 @@
         transform: scale(1);
         text-shadow: 2px 2px 1px #ff0000;
     }
+}
+
+.audio{
+    visibility: hidden;
+    position: absolute;
 }
 

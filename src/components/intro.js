@@ -15,7 +15,7 @@ function Intro ({intro}) {
     return(
         <div className="intro">
             <h1>SCAREFLIX</h1>
-            <audio src={sound} controls type="audio/mpeg" ref={play}></audio>
+            <audio src={sound} controls type="audio/mpeg" ref={play} className='audio'></audio>
         </div>
     )
 }
