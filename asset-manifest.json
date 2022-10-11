@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/scareflix/static/css/main.9c72fd45.css",
-    "main.js": "/scareflix/static/js/main.76807e15.js",
+    "main.js": "/scareflix/static/js/main.23ccba93.js",
     "static/media/Scareeye.gif": "/scareflix/static/media/Scareeye.062c5ad562e16f3c2028.gif",
     "static/media/sound.mp3": "/scareflix/static/media/sound.8ad6414cf943281329e7.mp3",
     "static/media/Strange.ttf": "/scareflix/static/media/Strange.52776f6848caba7addd8.ttf",
@@ -12,10 +12,10 @@
     "static/media/slick.woff": "/scareflix/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/scareflix/index.html",
     "main.9c72fd45.css.map": "/scareflix/static/css/main.9c72fd45.css.map",
-    "main.76807e15.js.map": "/scareflix/static/js/main.76807e15.js.map"
+    "main.23ccba93.js.map": "/scareflix/static/js/main.23ccba93.js.map"
   },
   "entrypoints": [
     "static/css/main.9c72fd45.css",
-    "static/js/main.76807e15.js"
+    "static/js/main.23ccba93.js"
   ]
 }
